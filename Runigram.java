@@ -174,7 +174,7 @@ public class Runigram {
 		int Red = (int) (c1.getRed() * alpha + c2.getRed() * (1 - alpha));
 		int Green = (int) (c1.getGreen() * alpha + c2.getGreen() * (1 - alpha));
 		int Blue = (int) (c1.getBlue() * alpha + c2.getBlue() * (1 - alpha));
-		Color color_new = new Color(R, G, B);
+		Color color_new = new Color(Red, Green, Blue);
 		return color_new;
 	}
 
@@ -191,7 +191,7 @@ public class Runigram {
 
 		for (int i = 0; i <image_new.length; i++) {
 			for (int j = 0; j < image_new[0].length; j++) {
-				new_image[i][j] = blend(image1[i][j], image2[i][j], alpha);
+				image_new[i][j] = blend(image1[i][j], image2[i][j], alpha);
 			}
 		}
 		//// Replace the following statement with your code
