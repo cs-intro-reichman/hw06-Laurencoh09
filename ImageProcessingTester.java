@@ -6,7 +6,7 @@ public class ImageProcessingTester {
         if (args.length < 2) {
             System.out.println("Usage: java ImageProcessingTester <function_name> <filename1> [filename2]");
             return;
-        }
+        } 
 
         String functionName = args[0];
         String filename1 = args[1];
